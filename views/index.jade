@@ -29,7 +29,6 @@ block content
 						div(class='photos', id=photo.id)
 							img(src=photo.picture, alt='pic')
 							br
-							#{photo.id}
 							form(id=photo.id, action='/picSubmit', method='POST', class='picComment')
 								input(class='comment', type='text', id=photo.id, name='comment', value='')
 								br

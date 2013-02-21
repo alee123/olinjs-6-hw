@@ -42,7 +42,7 @@ $(document).ready(function () {
   $('.picComment').submit(function (event) {
 
     //finished this section with the help of Shane Skikne
-    var id = $('.comment').attr("id");
+    var id = $('.picComment').parent().attr('id');
     var comment = $('.comment').val();
     console.log(id, comment);
     event.preventDefault();
