@@ -1,0 +1,42 @@
+extends layout
+
+
+
+block content
+	div(id='everything')
+		div(id='header')
+			div(class='toUse', id='picture')
+			div(class='toUse', id='title', value=currentUser.name) Welcome #{currentUser.name}!
+			div(class='toUse', id='pictureUrl', value=currentUser.url) #{currentUser.url}
+		div(id='changer')
+			br
+			form(id='userSet', action='/submitted', method='POST', class = 'userSet')
+				key BG Color: 
+				input(class='textinput', type='text', id = 'bg',name='bg', value=currentUser.bg)
+				br
+				key Font Color: 
+				input(class='textinput', type='text', id = 'font',name='font', value=currentUser.font)
+				br
+				key Border Color: 
+				input(class='textinput', type='text', id = 'border',name='border', value=currentUser.border)
+				br
+				br
+				input(class='submitButton', type='submit', value='Submit')
+			div(id='container')
+				tag #{friendName}
+				div(id='carousel')
+					each photo, i in photos
+						div(class='photos', id=photo.id)
+							img(src=photo.picture, alt='pic')
+							br
+							#{photo.id}
+							form(id=photo.id, action='/picSubmit', method='POST', class='picComment')
+								input(class='comment', type='text', id=photo.id, name='comment', value='')
+								br
+								input(class='submitButton', type='submit', value='Submit')
+				a(id='ui-carousel-prev', href='#') prev 
+				a(id='ui-carousel-next', href='#') next 
+			br
+			a(href='/logout')
+				input(id='logoutButton', type='button', value='Logout')
+

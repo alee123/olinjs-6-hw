@@ -1,0 +1,87 @@
+body {
+  color: #FFFFFF;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
+  background-color: #660066;
+  width: 700px;
+  margin: 30px auto;
+  border-width: 10px;
+  border-style: dashed;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#header{
+	margin: 0px auto;
+	border-bottom-width: 10px;
+	border-bottom-style: dashed;
+	border-bottom-color: white;
+	padding: 30px;
+	width: 640px
+}
+
+.toUse{
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#title{
+	font-weight: bold;
+	font-size: 50px;
+	width: 400px;
+	padding:30px;
+	text-align: left;
+}
+
+#changer{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	margin: 0px auto;
+}
+
+.textinput{
+	background: #FFFFFF;
+}
+
+form{
+	display:inline-block;
+	width: 50%;
+
+}
+
+#userSet{
+	text-align: left;
+	vertical-align: middle;	
+}
+
+#carousel{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container{
+	display:inline-block;
+	vertical-align:middle;
+	width:50%;
+}
+
+#result{
+	font-size: 12px;
+}
+
+a{
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+tag{
+	fonts-size: 13px;
+	color: #FFFFFF;
+}
+
+.picComment{
+	width:200px;
+}
