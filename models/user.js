@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-//mongoose.connect(process.env.MONGOLAB_URI || 'localhost');
-mongoose.connect('localhost/fakeFB2');
+mongoose.connect(process.env.MONGOLAB_URI || 'localhost');
+//mongoose.connect('localhost/fakeFB2');
 
 var userSchema = mongoose.Schema({
   name: String,
